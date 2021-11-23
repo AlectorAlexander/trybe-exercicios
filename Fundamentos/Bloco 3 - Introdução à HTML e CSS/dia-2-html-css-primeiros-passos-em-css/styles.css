@@ -1,0 +1,27 @@
+h1 { font-family: sans-serif;
+    font-size: 65px;
+    color:orange;
+}
+p {
+    font-weight: 600;
+    text-align: center;
+    font-size: 3em;
+    =
+}
+li {
+    
+    line-height: 18px;
+    background-color: orchid;
+}
+.mandão {
+    background-color: palegoldenrod;
+}
+#vermelho{
+    background-color: red;
+}
+#amarelo{
+    background-color: yellow;
+}
+#marrom{
+    background-color: brown;
+}
