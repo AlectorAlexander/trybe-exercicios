@@ -1,14 +1,17 @@
-li {
+ol {
     background-color: yellow;
 }
 ol li:nth-of-type(2n){
+    color: green;
+}
+ol li:nth-of-type(2n+1){
     text-transform: uppercase;
 }
-h1, h2 {
+h1, h2, h3 {
     color:red
 }
 
-h1 em, h2 em {
+h1 em, h2 em, h3 em {
     font-size: 40px;
     border: 1px solid black;
 }
@@ -21,6 +24,26 @@ li em {
 ul:first-of-type li:nth-last-of-type(n+3){
     color: blue;
 }
-[li~=Java]{
+.java {
     background-color: pink;
+}
+[href^="https://pt"]:hover {
+	color: orange;
+    font-weight: 900;
+}
+[href^="https://www.w3s"]:hover {
+	color: green;
+    font-weight: 900;
+}
+[href^="elhttps://de"]:hover {
+	color: rgb(0, 0, 0);
+    font-weight: 900;
+}
+[href^="https://devd"]:hover {
+	color: yellow;
+    font-weight: 900;
+}
+[href^="https://app."]:hover {
+	color: rgb(13, 233, 49);
+    font-weight: 900;
 }
