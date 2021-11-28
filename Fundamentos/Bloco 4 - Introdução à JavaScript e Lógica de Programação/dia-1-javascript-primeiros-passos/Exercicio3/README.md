@@ -1,2 +1,2 @@
-1>AGORA NA PRÁTICA </h1>
-Faça um programa que, dado um valor definido numa constante, retorne "positive" se esse valor for positivo, "negative" se for negativo e "zero" caso contrário.
+<h1>AGORA NA PRÁTICA </h1>
+Faça um programa que retorne o maior de três números. Defina no começo do programa três constantes com os valores que serão comparados.
