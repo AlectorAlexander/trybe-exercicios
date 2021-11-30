@@ -1,6 +1,6 @@
-<div class=" col-span-12 content-section-box"><h3 id="agora-a-pratica" class="title-section">
+<div class=" col-span-12 content-section-box"><h1 id="agora-a-pratica" class="title-section">
   Agora a prática
-</h3>
+</h1>
 <h4>
   Bora fixar o conteúdo de hoje?! 🎯 💪
 </h4>
@@ -35,38 +35,19 @@
   1- Para o primeiro exercício de hoje, faça um programa que, dado um valor 
 <code class="inline">n</code>   qualquer, seja 
 <code class="inline">n &gt; 1</code>  , imprima na tela um quadrado feito de asteriscos de lado de tamanho 
-<code class="inline">n</code>  . Por exemplo:
-</div>
-<div class="block-code"><button class="copy-code-button" type="button">Copiar</button><pre class=" language-shell" tabindex="0"><code class=" language-shell">n = 5
+<code class="inline">n</code>  .
 
-*****
-*****
-*****
-*****
-*****</code></pre></div>
 <hr class="thin">
 <div class="pt-1 pb-1">
   2- Para o segundo exercício, faça o mesmo que antes, mas que imprima um triângulo retângulo com 
-<code class="inline">5</code>   asteriscos de base. Por exemplo:
+<code class="inline">5</code>   asteriscos de base.
 </div>
-<div class="block-code"><button class="copy-code-button" type="button">Copiar</button><pre class=" language-shell" tabindex="0"><code class=" language-shell">n = 5
 
-*
-**
-***
-****
-*****</code></pre></div>
 <hr class="thin">
 <div class="pt-1 pb-1">
-  3- Agora inverta o lado do triângulo. Por exemplo:
+  3- Agora inverta o lado do triângulo. 
 </div>
-<div class="block-code"><button class="copy-code-button" type="button">Copiar</button><pre class=" language-shell" tabindex="0"><code class=" language-shell">n = 5
 
-    *
-   **
-  ***
- ****
-*****</code></pre></div>
 <div class="pt-1 pb-1">
   Atenção! Note que esse exercício é 
   <em>
@@ -79,10 +60,6 @@
   4- Depois, faça uma pirâmide com 
 <code class="inline">n</code>   asteriscos de base:
 </div>
-<div class="block-code"><button class="copy-code-button" type="button">Copiar</button><pre class=" language-shell" tabindex="0"><code class=" language-shell">n = 5
 
-  *
- ***
-*****</code></pre></div>
 <hr class="thin">
 <div class="content-spacement"></div><div class="content-section-feedback"><button type="button" class="btn btn-primary btn-base">Dê seu feedback</button></div></div>
