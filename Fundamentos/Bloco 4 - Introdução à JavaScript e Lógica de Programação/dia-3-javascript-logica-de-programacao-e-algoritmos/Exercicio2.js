@@ -1,10 +1,13 @@
 //Para o segundo exercício, faça o mesmo que antes, mas que imprima um triângulo retângulo com 5 asteriscos de base.
-n = 5;
-if (n>1){
+var n = 5;
+var dj = " ";
 
-    console.log("*")
-    console.log("**")
-    console.log("***")
-    console.log("****")
-    console.log("*****")
+for (let i = 0; i < n; i++) {
+    for (let id = 0; id < n; id++){
+
+    
+if (n>1 && i==id){
+    dj += "*";
+}
+}   console.log(dj)
 }
