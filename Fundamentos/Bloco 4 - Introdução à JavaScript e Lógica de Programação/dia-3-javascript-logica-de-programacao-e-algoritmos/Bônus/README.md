@@ -7,12 +7,7 @@
 <code class="inline">n</code>   será sempre ímpar:
 </div>
 <div class="block-code"><button class="copy-code-button" type="button">Copiar</button><pre class=" language-shell" tabindex="0"><code class=" language-shell">Por último, façamos com que a variável seja incrementada com o valor correspondente a cada loop;
-n = 7
 
-   *
-  * *
- *   *
-*******</code></pre></div>
 <hr class="thin">
 <div class="pt-1 pb-1">
   6- Faça um programa que diz se um número definido numa variável é primo ou não.
