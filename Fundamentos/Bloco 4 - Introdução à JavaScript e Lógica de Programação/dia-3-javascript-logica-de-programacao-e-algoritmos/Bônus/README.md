@@ -2,11 +2,10 @@
   Bônus
 </h3>
 <div class="pt-1 pb-1">
-  5- Faça uma pirâmide com 
-<code class="inline">n</code>   asteriscos de base que seja vazia no meio. Assuma que o valor de 
-<code class="inline">n</code>   será sempre ímpar:
+  5- Faça uma pirâmide com n asteriscos de base que seja vazia no meio. Assuma que o valor de 
+n será sempre ímpar:
 </div>
-<div class="block-code"><button class="copy-code-button" type="button">Copiar</button><pre class=" language-shell" tabindex="0"><code class=" language-shell">Por último, façamos com que a variável seja incrementada com o valor correspondente a cada loop;
+Por último, façamos com que a variável seja incrementada com o valor correspondente a cada loop;
 
 <hr class="thin">
 <div class="pt-1 pb-1">
