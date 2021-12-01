@@ -3,10 +3,10 @@ var n = 5;
 
 
 for (let linha = 0; linha < n; linha++) {
-    var dj = " ";
+    var asterisco = "";
     for (let coluna = 0; coluna < n; coluna++){
-    dj += "*";
+        asterisco += "*";
 }
-   console.log(dj)
+   console.log(asterisco)
 }
 
