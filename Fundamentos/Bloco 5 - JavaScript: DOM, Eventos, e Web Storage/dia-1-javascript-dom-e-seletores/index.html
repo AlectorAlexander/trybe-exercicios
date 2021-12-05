@@ -6,13 +6,15 @@
     <title>Exercício 5.1</title>
     
     <style>
+
       main, section {
         border-color: black;
         border-style: solid;
       }
 
-      .title {
+      #title {
         text-align: center;
+       
       }
 
       .main-content {
@@ -32,7 +34,7 @@
   </head>
   <body>
     <header> 
-      <h1 class="title">Exercício 5.1 - JavaEscripito </h1>
+      <h1 id="title">Exercício 5.1 - <span>JavaEscripito</span> </h1>
     </header>    
     <main class="main-content">
       <section class="center-content">
@@ -47,13 +49,36 @@
         - document.getElementById()
         - document.getElementsByClassName()
         - document.getElementsByTagName()
- Crie uma função que mude o texto na tag <p> para uma descrição de como você se vê daqui a 2 anos. (Não gaste tempo pensando no texto e sim realizando o exercício)
- Crie uma função que mude a cor do quadrado amarelo para o verde da Trybe (rgb(76,164,109)).
- Crie uma função que mude a cor do quadrado vermelho para branco.
- Crie uma função que corrija o texto da tag <h1>.
+ 1-Crie uma função que mude o texto na tag <p> para uma descrição de como você se vê daqui a 2 anos. (Não gaste tempo pensando no texto e sim realizando o exercício)
+ 2-Crie uma função que mude a cor do quadrado amarelo para o verde da Trybe (rgb(76,164,109)).
+ 3 - Crie uma função que mude a cor do quadrado vermelho para branco.
+ 4-Crie uma função que corrija o texto da tag <h1>.
  Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
- Crie uma função que exiba o conteúdo de todas as tags <p> no console.
+ 5-Crie uma função que exiba o conteúdo de todas as tags <p> no console.
         */
+//Requerimento1
+      var p = document.getElementsByTagName("p")
+      for (let i = 0; i < p.length; i++) {
+          p[i].innerText = "Look at me now. Look ate me now. I'm getting paper. Look at me now. Oh. Look at me now. Yeah. Fresher than a motherfucker";   
+      }
+//Requerimento2
+      var fundo =  document.getElementsByClassName("main-content");
+      fundo[0].style.backgroundColor = "green"
+//Requerimento3
+      var fundo2 =  document.getElementsByClassName("center-content");
+      fundo2[0].style.backgroundColor = "white"
+//Requerimento4
+      var h1 = document.getElementById("title");
+      
+      
+      h1.innerText = "Exercício 5.1 - JavaScript"
+//Requerimento5
+for (let ind = 0; ind < p.length; ind++) {
+          p[ind].style.textTransform= "Uppercase"
+}
+//Requerimento6
+console.log(p)    
+
     </script>
   </body>
 </html>
