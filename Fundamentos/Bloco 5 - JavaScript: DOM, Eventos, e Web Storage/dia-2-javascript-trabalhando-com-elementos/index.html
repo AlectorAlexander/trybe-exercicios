@@ -66,6 +66,17 @@
       let main = document.createElement("main");
       main.className += "main-content";
       body.appendChild(main)
+      //Adicione a tag section com a classe center-content como filho da tag main criada no passo 2;
+      let mainSection = body.children[2];
+      let Section = document.createElement("section");
+      Section.className = "center-content";
+      mainSection.appendChild(Section)
+      //Adicione a tag p como filho do section criado no passo 3 e coloque algum texto;
+      let SectionStage = main.firstChild
+      let p = document.createElement("p");
+      p.innerText = "Cause it's 1-8-7 on a undercover cop";
+      SectionStage.appendChild(p)
+
       
     </script>
   </body>
