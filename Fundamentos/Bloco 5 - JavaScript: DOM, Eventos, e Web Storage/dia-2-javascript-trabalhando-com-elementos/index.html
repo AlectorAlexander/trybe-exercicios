@@ -76,6 +76,8 @@
       let p = document.createElement("p");
       p.innerText = "Cause it's 1-8-7 on a undercover cop";
       SectionStage.appendChild(p)
+      p.style = "color: white"
+      
       //Adicione a tag section com a classe left-content como filho da tag main criada no passo 2;
       let sectionLeft = document.createElement("section")
       sectionLeft.className = "left-content";
@@ -84,7 +86,30 @@
       let sectionRight = document.createElement ("section");
       sectionRight.className = "right-content";
       main.appendChild(sectionRight);
+      //Adicione uma imagem com src configurado para o valor https://picsum.photos/200 e classe small-image . Esse elemento deve ser filho do section criado no passo 5;
+      let sectionLeftStage = SectionStage.firstChild
+      let img = document.createElement("img")
+      img.src = "https://picsum.photos/200" ; img.className = "small-image"
+      sectionLeftStage.appendChild(img)
+      //Adicione uma lista não ordenada com os valores de 1 a 10 por extenso, ou seja, um , dois , três , ... como valores da lista. Essa lista deve ser filha do section criado no passo 6;
+      let sectionRightStage = main.children[2];
 
+      for (let i = 1; i <= 10; i += 1){
+        let li = document.createElement("li");
+        li.innerText = i;
+        sectionRightStage.appendChild(li)
+        li.style.color = "white"
+      }
+//      Adicione 3 tags h3 , todas sendo filhas do main criado no passo 2.
+      let h31 = document.createElement("h3");
+      let h32 = document.createElement("h3");
+      let h33 = document.createElement("h3");
+    mainSection.appendChild(h31);
+    mainSection.appendChild(h32);
+    mainSection.appendChild(h33);
+    h31.innerText = "Cogito";
+    h32.innerText = "Ego";
+    h33.innerText = "Sun";
       
     </script>
   </body>
