@@ -21,10 +21,18 @@ function createDaysOfTheWeek() {
     let dias = dezDaysList[index]
     let lista = document.createElement("li")
     lista.innerText = dias;
-    lista.className = "days"
+    lista.className = "day"
+    
+    
+    
+   
     let idays = document.getElementById("days");
+    
+  
+    
     idays.appendChild(lista)
-      
   }
+  
+  
   
   
