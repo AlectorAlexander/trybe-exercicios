@@ -13,12 +13,13 @@ function createDaysOfTheWeek() {
   
   createDaysOfTheWeek();
   
+  
   // Escreva seu código abaixo.
 
+  //Exercicio1
+  
   const dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
   
-  //Exercicio1
-
   for (let index = 0; index < dezDaysList.length; index++) {
     var dias = dezDaysList[index]
     var lista = document.createElement("li")
@@ -26,19 +27,27 @@ function createDaysOfTheWeek() {
     lista.innerText = dias;
     
        lista.className = "day"
+
+    //Exercicio6
+     
+    lista.addEventListener("mouseover", mouseEncima)
       
-  
+       
     var idays = document.getElementById("days");
      idays.appendChild(lista)
+     
      if (index == dezDaysList.length -1){
        vai ()
+       
      }
   }
+
   function vai () {
-    
+  
    for (i = 0; i <= idays.childElementCount; i += 1){
     if (i == idays.childElementCount){
       CriaButao()
+      CriaButao2()
     }
     var lis = idays.children[i];
     let dias = lis.innerHTML
@@ -55,6 +64,7 @@ function createDaysOfTheWeek() {
   }
   
   //Exercicio2
+
   function CriaButao(){
     
   var botao = document.createElement("button");
@@ -79,38 +89,66 @@ var holiday = document.querySelectorAll(".holiday");
    }
 }
 }
-//if 
-//  console.log("cu")
-//for (let holy = 0; holy < holiday.length; holy++) {
-//  const element = holiday[holy];
-// 
-//
-//    holiday.classList.remove("gray")
-//    holiday.className += "green"
-//  element.style.backgroundColor = "green"
-//
+  )
+}
+//Exercicio4
+function CriaButao2(){
+    
+  var botao2 = document.createElement("button");
+  botao2.innerText = "Sexta-Feira"
+  let botaoContainer = document.querySelector(".buttons-container");
+  botaoContainer.appendChild(botao2);
+  botao2.id = "btn-friday";
+
+  //Exercicio5
+  
+  botao2.addEventListener("click", function() {
+
+
+  var friday = document.getElementsByClassName("friday")
+  var lembra = [dezDaysList[5],dezDaysList[12],dezDaysList[19],dezDaysList[26]]
+ 
   
 
 
-//  }
-//}
-  
-)
+  for (let fri = 0; fri < friday.length; fri++) {
+    
+    const elementory = friday[fri];
+    
+    if (elementory.className == "day holiday friday green" || elementory.className == "day holiday friday" || elementory.className == "day friday") {
+    elementory.style.fontSize = "25px";
+    elementory.innerText = "Sexta-Feira"
+    
+   
+  elementory.className += " grande"
+   } else {
+     
+     elementory.classList.remove("grande")
+     elementory.style.fontSize = "20px"
+     elementory.innerText = lembra[fri]
+   }
+}
+}
+  )
   
   
 }
+//Exercício6:
 
-  
 
-function desConfigButao (){
-  var holiday = document.querySelectorAll(".holiday");
-  for (let holy = 0; holy < holiday.length; holy++) {
-    const element = holiday[holy];
-    
-    element.style.backgroundColor = "white"
-  
-    
-  }
-  botao.addEventListener("click", CriaButao)
-  }
+function mouseEncima (oquefoi){
+  oquefoi.target.style.fontSize = "30px"
+  oquefoi.target.style.color = "white";
+  oquefoi.target.style.backgroundColor = "black"
+  oquefoi.target.style.font = "black"
+  oquefoi.target.addEventListener("mouseleave", function(){
+    oquefoi.target.style.backgroundColor = "#eee"
+    oquefoi.target.style.fontSize = "20px"
+    oquefoi.target.style.color = "#777"
+  })
+}
+
+
+
+
   
