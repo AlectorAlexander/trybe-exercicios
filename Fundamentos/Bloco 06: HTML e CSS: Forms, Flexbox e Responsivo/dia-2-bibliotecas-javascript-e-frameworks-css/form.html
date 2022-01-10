@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" >
+    
+</head>
+<body>
+    
+    <form action="#" id="form" autocomplete="off">
+          <input type="text"  class="form__input form-control"  placeholder="Escreva seu Nome" id="name">
+          <input type="email" class="form__input form-control"   placeholder="Escreva seu e-mail" id="email" >
+          <br>
+            <br>
+            <input type="number" maxlength="11" id="cpf" required placeholder="Escreva seu CPF">
+            <input type="text" id="Endereço" required placeholder="Escreva seu Endereço">
+            <br>
+            <br>
+            <input type="text" id="Cidade" required placeholder="Escreva o nome de sua Cidade">
+            <br>
+            <br>
+            <select name="Estado" id="estados">
+
+            </select>
+            <input type="radio" name="cp" class="radion" required>Casa
+            <input type="radio" name="cp" class="radion" required>Apartamento
+        </fieldset>
+        <fieldset>
+            <textarea name="ultimoCargo" id="colon" cols="30" rows="10" required placeholder="Descrição do último emprego"></textarea>
+            <input type="text" maxlength="40" id="Cargo" required placeholder="Cargo que ocupava">
+            
+            <input type="date" id="datepicker" min="0000-00-00" max="2022-12-31">
+
+        <button id="buton" type="submit">Enviar</button>
+    </form>
+    <script src="script.js" type="module"></script>
+  
+   
+</body>
+</html>
