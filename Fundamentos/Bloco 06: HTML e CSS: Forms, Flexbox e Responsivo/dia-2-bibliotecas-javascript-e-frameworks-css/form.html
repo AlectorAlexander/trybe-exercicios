@@ -5,17 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+    <link rel="stylesheet" href="style.css" >
     
 </head>
 <body>
     
     <form action="#" id="form" autocomplete="off">
-        <fieldset class="field">
-            <input type="text"  class="form__input form-control"  required placeholder="Escreva seu Nome" maxlength="40">
-            <input type="email" id="email" required placeholder="Escreva seu e-mail" maxlength="50">
-            <br>
+          <input type="text"  class="form__input form-control"  placeholder="Escreva seu Nome" id="name">
+          <input type="email" class="form__input form-control"   placeholder="Escreva seu e-mail" id="email" >
+          <br>
             <br>
             <input type="number" maxlength="11" id="cpf" required placeholder="Escreva seu CPF">
             <input type="text" id="Endereço" required placeholder="Escreva seu Endereço">
@@ -36,36 +34,10 @@
             
             <input type="date" id="datepicker" min="0000-00-00" max="2022-12-31">
 
-        </fieldset>
         <button id="buton" type="submit">Enviar</button>
     </form>
-    <script src="script.js"></script>
-    <script>
-        const validate = new window.JustValidate('#form');
-        const validation = new JustValidate('#form');
-
-validation
-  .addField('#name', [
-    {
-      rule: 'minLength',
-      value: 3,
-    },
-    {
-      rule: 'maxLength',
-      value: 30,
-    },
-  ])
-  .addField('#email', [
-    {
-      rule: 'required',
-      errorMessage: 'Email is required',
-    },
-    {
-      rule: 'email',
-      errorMessage: 'Email is invalid!',
-    },
-  ]);
-      </script>
+    <script src="script.js" type="module"></script>
+  
    
 </body>
 </html>
