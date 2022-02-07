@@ -20,7 +20,7 @@ let verificador1 = (value1, value2) => {
        let valor2 = parseInt(value2)
 
        if (value1 == 0 ||value2 == 0 ){
-      document.getElementById('result').innerHTML = 'Os valores devem ser numeros inteiros';
+      document.getElementById('result').innerText = 'Os valores devem ser numeros inteiros';
 
     throw new Error ('Os valores devem ser numeros inteiros')
        }
